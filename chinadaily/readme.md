@@ -14,7 +14,7 @@ CDMPC 2023-2024： [https://newssearch.chinadaily.com.cn/en/search?cond=%7B%22pu
 
 ![image-20241225191114138](./assets/image-20241225191114138.png)
 
-因为直接用 BeautifulSoup4 或者 Scrapy 进行爬取，在不设置 cookie 的情况下会因为反爬虫机制无法获取文章具体信息（被CHINADAILY 隐藏）。使用 selenium 爬取的主函数如下：
+因为直接用 BeautifulSoup4 或者 Scrapy 进行爬取，在不设置 cookie 的情况下会因为反爬虫机制无法获取文章具体信息（被CHINADAILY 隐藏）。使用 selenium 爬取，需要先下载一个针对浏览器的 driver，因为我使用的是火狐（Mozilla 133.0.3, 据说比较方便），所以在geckodriver ([仓库地址](https://github.com/mozilla/geckodriver)) 直接下载了火狐的驱动器，解压后放到运行目录底下。
 
 ```python
 from selenium import webdriver
