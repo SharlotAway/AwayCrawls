@@ -228,7 +228,7 @@ def extract_by_year(driver, df, tgt_path, together_path):
 
 发现内容截断（得到空文件），主要是因为在部分标题中会有`:` 存在，在代码中将其替换成`-`解决。
 
-![image-20241225194649626](./assets/image-20241225194649626.png)
+![](./assets/image-20241225194649626.png)
 
 对部分“声明“进行了筛选。
 
